@@ -13,7 +13,7 @@ body{
 }
 #card{
     background-color: hsl(0, 0%, 100%);
-    width:20%;
+    width:15%;
     border-radius: 20px;
     margin:auto;
     display:flex;
@@ -21,7 +21,7 @@ body{
     align-items: center;
     padding:.75rem
 }
-h2{
+h1{
     padding: 0 0 1rem 0;
     font-weight: 700;
     color: hsl(218, 44%, 22%);
