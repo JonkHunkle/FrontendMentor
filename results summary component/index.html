@@ -5,43 +5,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk">
   <title>Frontend Mentor | Results summary component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
+<main id="card">
+  <section id="resultSection">
+    <p id="resultTitle">
+      Your Result
+    </p>
+      <div id="circle">
+          <sub>of 100</sub>
+      </div>
+      <aside id="blockText">
+        <h3 id="great">
+          Great
+        </h3>
+        <p id="otherBlock">
+          You scored higher than 65% of the people who have taken these tests.
+        </p>
+      </aside>
+  </section>
+  <section id="summarySection">
+    <p id="summaryTitle">
+      Summary
+    </p>
+      <table id="summaryTable">
 
-  Your Result
-  76
-  of 100
-
-  Great
-  You scored higher than 65% of the people who have taken these tests.
-  
-  Summary
-
-  Reaction
-  80 / 100
-
-  Memory
-  92 / 100
-
-  Verbal
-  61 / 100
-
-  Visual
-  72 / 100
-
-  Continue
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+      </table>
+      <button id="continue">Continue</button>
+  </section>
+</main>
+  <script src="scripts.js"></script>
 </body>
 </html>
