@@ -7,11 +7,11 @@ try {
     for (const obj of res){
         total+=obj.score
         let newEl=document.createElement('tr')
-        let leftHandTray=document.createElement('div')
-        let rightHandTray=document.createElement('div')
+        let leftHandTray=document.createElement('td')
+        let rightHandTray=document.createElement('td')
         let newIcon=document.createElement('img')
         let newCategory=document.createElement('p')
-        let newScore=document.createElement('div')
+        let newScore=document.createElement('td')
         let userScore=document.createElement('h3')
         let divisor = document.createElement('div')
         leftHandTray.setAttribute('class', 'leftHandTray')
