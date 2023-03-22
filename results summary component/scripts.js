@@ -6,7 +6,7 @@ try {
     let total=0
     for (const obj of res){
         total+=obj.score
-        let newEl=document.createElement('div')
+        let newEl=document.createElement('tr')
         let leftHandTray=document.createElement('div')
         let rightHandTray=document.createElement('div')
         let newIcon=document.createElement('img')
@@ -14,8 +14,8 @@ try {
         let newScore=document.createElement('div')
         let userScore=document.createElement('h3')
         let divisor = document.createElement('div')
-        leftHandTray.setAttribute('id', 'leftHandTray')
-        rightHandTray.setAttribute('id', 'rightHandTray')
+        leftHandTray.setAttribute('class', 'leftHandTray')
+        rightHandTray.setAttribute('class', 'rightHandTray')
         newEl.setAttribute('id', obj.category)
         newEl.setAttribute('class', 'row')
         newCategory.textContent=obj.category

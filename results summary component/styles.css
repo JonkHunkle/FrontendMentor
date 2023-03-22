@@ -4,49 +4,11 @@
 
 The designs were created to the following widths:
 
-- Mobile: 375px
 - Desktop: 1440px
 
 ## Colors
 
-### Primary
-
-- Light red: hsl(0, 100%, 67%)
-- Orangey yellow: hsl(39, 100%, 56%)
-- Green teal: hsl(166, 100%, 37%)
-- Cobalt blue: hsl(234, 85%, 45%)
-
-## Gradients
-
-- Light slate blue (background): hsl(252, 100%, 67%)
-- Light royal blue (background): hsl(241, 81%, 54%)
-
-- Violet blue (circle): hsla(256, 72%, 46%, 1)
-- Persian blue (circle): hsla(241, 72%, 46%, 0)
-
-
-
-### Neutral
-
-- White: hsl(0, 0%, 100%)
-- Pale blue: hsl(221, 100%, 96%)
-- Light lavender: hsl(241, 100%, 89%)
-- Dark gray blue: hsl(224, 30%, 27%)
-
-### Notes
-
-Use transparency to get the colour variations necessary to match the design. Hint: look into using `hsla()`.
-
-## Typography
-
-### Body Copy
-
-- Font size (paragraphs): 18px
-
-### Font
-
-- Family: [Hanken Grotesk](https://fonts.google.com/specimen/Hanken+Grotesk)
-- Weights: 500, 700, 800 */
+*/
 *{
     margin: 0;
     padding: 0;
@@ -61,16 +23,17 @@ body{
     box-sizing: border-box;
     background-color: hsl(0, 0%, 100%);
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 #card {
     box-shadow: 1px 5px 10px  hsla(0, 0%, 0%, 0.067);
-    width:40%;
-    /* height:fit-content; */
+    width:40rem;
     display:grid;
     grid-template-columns: 1fr 1fr;
     border-radius: 25px;
-    margin:auto
-    /* padding: 2rem; */
+    place-self: center;
 }
 #resultSection{
     color: hsla(0, 0%, 100%, 0.7);
@@ -122,7 +85,6 @@ body{
 
 #resultTitle{
     font-weight: 500;
-
 }
 #summarySection{
     grid-column: 2;
@@ -148,37 +110,40 @@ height: 100%;
 width: 100%;;
 flex-direction: column;
 justify-content: space-between;
+gap:1rem
 }
 
 #continue{
-    padding: .5rem 0;
+    padding: 1rem 0;
     border-radius: 2rem;
     color: #fbffe9;
     width: 100%;
     background-color: hsl(224, 30%, 27%);
+    font-weight: 700;
+    font-size: rem;
 }
 #continue:hover{
     cursor:pointer;
     background-image: linear-gradient(hsl(252, 100%, 67%), hsla(241, 81%, 54%, 0.734));
 }
-#leftHandTray{
+.leftHandTray{
     gap: 1rem;
     display: flex;
 }
-#leftHandTray p{
+.leftHandTray p{
     font-weight: 700;
 }
-#rightHandTray{
+.rightHandTray{
     display: flex;
     gap:.5rem;
 }
-#rightHandTray h3 {
+.rightHandTray h3 {
     font-weight: 800;
     color: #29303e!important;
     text-align: center;
 
 }
-#rightHandTray div {
+.rightHandTray div {
     margin: auto;
     font-weight: 500;
     color: #939092!important;
@@ -189,9 +154,6 @@ justify-content: space-between;
     color:hsla(0, 100%, 67%);
     background-color:hsla(0, 100%, 67%, .1)
 }
-/* #Reaction p{
-    place-self: start;
-} */
 
 #Memory{
     display: flex;
@@ -218,4 +180,18 @@ justify-content: space-between;
     display: flex;
     justify-content: space-between;
     border-radius: .25rem;
+}
+
+@media(max-width:600px){
+    #card{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        border:none
+    }
+#resultSection{
+    border-radius: 0 0 1rem 1rem;
+}
+
 }
