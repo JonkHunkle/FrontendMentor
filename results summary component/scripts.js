@@ -6,7 +6,7 @@ try {
     let total=0
     for (const obj of res){
         total+=obj.score
-        let newEl=document.createElement('tr')
+        let newEl=document.createElement('div')
         let leftHandTray=document.createElement('div')
         let rightHandTray=document.createElement('div')
         let newIcon=document.createElement('img')
@@ -24,6 +24,7 @@ try {
         newScore.append(divisor)
         newScore.insertBefore(userScore, newScore.firstChild)
         newIcon.setAttribute('src', obj.icon)
+        newIcon.setAttribute('alt', "category icon")
         newEl.append(leftHandTray)
         newEl.append(rightHandTray)
         rightHandTray.insertBefore(userScore, rightHandTray.firstChild)
