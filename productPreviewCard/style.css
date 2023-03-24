@@ -63,14 +63,10 @@ h6 {
   }
 
 .text-block{
-  /* height:inherit; */
     padding:1.5rem;
-    gap:.5rem;
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
     justify-content: center;
-    /* text-align: start; */
 }
 .category{
 font-weight: 500
@@ -80,26 +76,27 @@ border-radius: 1rem 1rem 0 0 ;
 }
 
 .product-title{
-    font-weight: 700;
     font-family: 'Fraunces';
     color: hsl(212, 21%, 14%);
     line-height: 1;
 }
 .description{
-padding: .5rem 0;
+  padding:1rem 0
 }
 .price{
 display: flex;
 align-items: center;
 gap: 1.5rem;
-padding: .5rem 0
 }
 .discount{
-    font-family: 'Fraunces', sans-serif;
+  font-size: calc(1.5rem);
+  font-weight: 700;
+  font-family: 'Fraunces';
     color:hsl(158, 36%, 37%)
 }
 .actual{
 text-decoration: line-through;
+font-weight: 500;
 }
 .add-btn:hover{
     background-color:hsl(156, 42%, 18%);
